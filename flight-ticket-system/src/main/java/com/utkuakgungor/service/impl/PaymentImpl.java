@@ -29,7 +29,7 @@ public class PaymentImpl implements PaymentInterface {
 
     private void pay(BigDecimal price,String itemName){
         Options options = new Options();
-        options.setApiKey(IyzicoApiEntity.getApiKey()); //TODO:
+        options.setApiKey(IyzicoApiEntity.getApiKey()); //TODO: https://dev.iyzipay.com/
         options.setSecretKey(IyzicoApiEntity.getSecretKey());
         options.setBaseUrl("https://sandbox-api.iyzipay.com");
 
